@@ -1,0 +1,23 @@
+CREATE TABLE users  (
+	id int GENERATED ALWAYS AS IDENTITY,
+	fname VARCHAR(60),
+	sname VARCHAR(100),
+	age int,
+	privileged boolean
+);
+
+INSERT INTO users (fname, sname, age, privileged)
+VALUES ('Dani','Freeman', 18, true),
+	('Sany','Smith', 27, false),
+	('Fany','Broke', 15, false),
+	('Bob','Jonson', 41, true);
+
+mypsdb=> \dt
+       List of relations
+ Schema | Name  | Type  | Owner
+--------+-------+-------+-------
+ public | users | table | qdrow
+(1 row)
+
+Интеренет-магазин музыкальных интсрументов
+
